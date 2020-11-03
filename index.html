@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draw with JavaScript</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Try to draw on the canvas!</h1>
+    </header>
+
+    <section>
+        <div class="canvasDiv">
+            <canvas width="600px" height="600px" id="mainCanvas"></canvas>
+        </div>
+        <div class="controls">
+            <button id="increaseBtn"><span>+</span></button>
+            <button id="decreaseBtn"><span>-</span></button>
+            <span id="sizeBrush">30</span>
+            <button onclick=""><span>PH</span></button>
+            <button onclick=""><span>PH</span></button>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
 </body>
 </html>

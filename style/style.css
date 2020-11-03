@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+section {
+    margin-top: 7em;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+section canvas {
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+}
+
+section button {
+    width: 3em;
+    height: 3em;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 3.5em;
+    background-color: rebeccapurple;
+}
+
+.controls > * {
+    background-color: white;
+    border: none;
+    padding: 0.25rem;
+    margin: 5px;
+}

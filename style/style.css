@@ -24,7 +24,7 @@ section {
 }
 
 section canvas {
-    border: 1px solid black;
+    border: 1px solid lightsalmon;
     width: 600px;
     height: 600px;
 }
@@ -41,12 +41,16 @@ section button {
     align-items: center;
     width: 600px;
     height: 3.5em;
-    background-color: rebeccapurple;
+    background-color: lightsalmon;
 }
 
 .controls > * {
     background-color: white;
     border: none;
-    padding: 0.25rem;
+    padding: 0.1rem;
     margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
 }

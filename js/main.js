@@ -3,6 +3,8 @@ const ctx = canvas.getContext("2d");
 const increaseBtn = document.getElementById("increaseBtn");
 const decreaseBtn = document.getElementById("decreaseBtn");
 const brushSize = document.getElementById("sizeBrush");
+const clearBtn = document.getElementById("clearCanvasPlz");
+
 
 let size = 30;
 let x = 50;
@@ -27,6 +29,10 @@ canvas.addEventListener("mousemove", (e) => {
     }
 });
 
+clearBtn.addEventListener("click", () => {
+    clearCanvas();
+});
+
 function updateSizeOnScreen() {
     brushSize.innerText = size;
 }
@@ -40,6 +46,10 @@ increaseBtn.addEventListener("click", () => {
 
     updateSizeOnScreen();
 });
+
+function clearCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
 
 decreaseBtn.addEventListener("click", () => {
     if (size > 5) {

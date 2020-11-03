@@ -10,7 +10,9 @@ let size = 30;
 let x = 50;
 let y = 50;
 
+
 var isPressed = false;
+
 
 canvas.addEventListener("mousedown", () => {
     isPressed = true;

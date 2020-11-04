@@ -4,12 +4,12 @@ const increaseBtn = document.getElementById("increaseBtn");
 const decreaseBtn = document.getElementById("decreaseBtn");
 const brushSize = document.getElementById("sizeBrush");
 const clearBtn = document.getElementById("clearCanvasPlz");
-
+const colorEl = document.getElementById("color");
 
 let size = 30;
 let x = 50;
 let y = 50;
-
+let color = 'black';
 
 var isPressed = false;
 
@@ -38,6 +38,10 @@ clearBtn.addEventListener("click", () => {
 function updateSizeOnScreen() {
     brushSize.innerText = size;
 }
+
+colorEl.addEventListener("change", (e) => {
+    color = e.target.value;
+});
 
 increaseBtn.addEventListener("click", () => {
     if (size < 50) {
@@ -72,6 +76,7 @@ function decreaseSz() {
 function drawCircle(x, y) {
     ctx.beginPath(); 
     ctx.arc(x, y, size, 0, Math.PI * 2);
+    ctx.fillStyle = color;
     ctx.fill();
 }
 

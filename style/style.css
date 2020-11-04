@@ -35,6 +35,11 @@ section button {
     
 }
 
+#color {
+    width: 3em;
+    height: 3em;
+}
+
 .controls {
     display: flex;
     flex-direction: row;

@@ -74,6 +74,7 @@ decreaseBtn.addEventListener("click", () => {
     }
 
     updateSizeOnScreen();
+    
 });
 
 function drawLine(x1, y1, x2, y2) {
